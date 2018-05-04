@@ -10,10 +10,9 @@
 </div>
 <br>
 <div class="row">
-    <div class="card col-md-3" *ngFor="let album of albums">
+    <div class="card col-md-3" *ngFor="let album of albums" style="max-width: 24%; margin: 5px;">
       <div class="card-body">
-        <h5 class="card-title">{{ album.name }}</h5>
+        <h5 class="card-title"><a [routerLink]="[album.id,'photos','create']"> {{ album.name }} </a></h5>
       </div>
     </div>
 </div>
-
